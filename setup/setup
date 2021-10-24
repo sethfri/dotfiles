@@ -5,3 +5,4 @@ setup/install-homebrew
 set -e
 
 setup/link-dotfiles
+setup/tweak-mac-defaults

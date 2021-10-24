@@ -1,0 +1,67 @@
+#!/usr/bin/env sh
+
+#################
+# General UI/UX #
+#################
+
+# Make Bluetooth icon visible in the menu bar
+defaults write com.apple.controlcenter 'NSStatusItem Visible Bluetooth' -bool true
+
+############
+# Controls #
+############
+
+# Increase mouse tracking to the fastest speed
+defaults write -g com.apple.mouse.scaling 3
+
+# Make mouse scrolling a bit faster
+defaults write -g com.apple.scrollwheel.scaling 1
+
+defaults write -g com.apple.trackpad.scaling 2
+
+# Set the key repeat rate to 15ms. The fastest System Preferences can go is 30ms
+defaults write -g KeyRepeat 1
+
+# Set the initial key repeat wait to 150ms (10). The fastest System Preferences
+# can go is 225ms (15)
+defaults write -g InitialKeyRepeat 10
+
+##########
+# Finder #
+##########
+
+# Use list view in all Finder windows by default
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+#########################
+# Dock, Mission Control #
+#########################
+
+# Speed up Mission Control animations
+defaults write com.apple.dock expose-animation-duration -float 0.1
+
+# Don't automatically rearrange Spaces based on most recent use
+defaults write com.apple.dock mru-spaces -bool false
+
+# Remove the auto-hiding Dock delay
+defaults write com.apple.dock autohide-delay -float 0
+
+##########
+# Safari #
+##########
+
+# Enable the Develop menu in Safari
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+
+####################
+# Other Apple Apps #
+####################
+
+# Use plain text mode for new TextEdit documents
+defaults write com.apple.TextEdit RichText -int 0
+
+#############
+# Finish Up #
+#############
+
+echo "Done. You'll need to restart now"
