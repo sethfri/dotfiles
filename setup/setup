@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+setup/install-homebrew
+
+set -e
+
+setup/link-dotfiles

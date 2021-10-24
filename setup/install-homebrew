@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+set -e
+
+echo ""
+echo "==========================================="
+echo "Setting up Homebrew"
+echo ""
+
+echo "Installing Homebrew"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" \
+  || echo "Homebrew already installed"
+
+echo "Installing brew bundle"
+brew tap Homebrew/bundle
+
+echo "Installing Homebrew dependencies"
+brew bundle
