@@ -6,3 +6,4 @@ set -e
 
 setup/link-dotfiles
 setup/tweak-mac-defaults
+setup/pull-private-prefs

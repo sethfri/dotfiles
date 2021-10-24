@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if ! which gh >/dev/null; then
+  echo "gh is not installed. Please make sure brew bundle completed successfully"
+  exit 1
+fi
+
+gh repo clone sethfri/private-mac-preferences ../private-mac-preferences
