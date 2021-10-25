@@ -7,6 +7,9 @@
 # Make Bluetooth icon visible in the menu bar
 defaults write com.apple.controlcenter 'NSStatusItem Visible Bluetooth' -bool true
 
+# Reduce motion
+defaults write com.apple.Accessibility ReduceMotionEnabled -bool true
+
 ############
 # Controls #
 ############
