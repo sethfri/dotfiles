@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+message="$1"
+
+if [[ -z $message ]]; then
+  echo "Need to include a message to put in the banner"
+  exit 1
+fi
+
+echo ""
+echo "==========================================="
+echo "$1"
+echo "==========================================="
+echo ""

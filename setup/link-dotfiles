@@ -2,9 +2,6 @@
 
 set -e
 
-echo ""
-echo "==========================================="
-echo "Linking dotfiles"
-echo ""
+setup/echo-banner "Linking dotfiles"
 
 RCRC=rcrc rcup -v -d .

@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+setup/echo-banner "Tweaking Mac defaults"
+
 #################
 # General UI/UX #
 #################
@@ -69,4 +71,5 @@ defaults write com.apple.TextEdit RichText -int 0
 # Finish Up #
 #############
 
-echo "Done. You'll need to restart now"
+echo ""
+echo "Done tweaking Mac defaults. You'll need to restart now"

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+setup/echo-banner "Pulling private preferences"
+
 if ! which gh >/dev/null; then
   echo "gh is not installed. Please make sure brew bundle completed successfully"
   exit 1
