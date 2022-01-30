@@ -178,6 +178,8 @@ function prl() {
 
 # automatically enter directories without cd
 setopt AUTO_CD
+# Make glob matching case insensitive
+setopt NO_CASE_GLOB
 
 # Source Private Zsh
 
