@@ -197,6 +197,7 @@ bindkey "^[[B" history-beginning-search-forward-end
 
 source "$HOME/Development/mac-setup/config/zsh/colors.zsh"
 source "$HOME/Development/mac-setup/config/zsh/prompt.zsh"
+source "$HOME/Development/mac-setup/config/zsh/history.zsh"
 source "$HOME/Development/mac-setup/config/zsh/completion/completion.zsh"
 
 # Completion
