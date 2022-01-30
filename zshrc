@@ -174,4 +174,11 @@ function prl() {
     git log origin/main..HEAD --reverse --format='* %<(2)%B' | sed '/^$/d' | pbcopy
 }
 
+# zsh config
+
+# automatically enter directories without cd
+setopt AUTO_CD
+
+# Source Private Zsh
+
 source "$HOME/Development/private-mac-preferences/square-zshrc"
