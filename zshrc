@@ -183,6 +183,8 @@ setopt NO_CASE_GLOB
 # Add command autocorrection
 setopt CORRECT
 setopt CORRECT_ALL
+# Do not start cycling through completion options on repeated tabs
+setopt NO_AUTO_MENU
 
 # Source Private Zsh
 
