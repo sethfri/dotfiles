@@ -16,6 +16,10 @@ path=(
   "/sbin"
 )
 
+# Projects
+alias ms="$HOME/Development/mac-setup"
+alias pmp="$HOME/Development/private-mac-preferences"
+
 # Git
 alias gmt='git mergetool'
 alias gm='git merge'
