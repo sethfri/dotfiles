@@ -186,6 +186,9 @@ setopt CORRECT_ALL
 # Do not start cycling through completion options on repeated tabs
 setopt NO_AUTO_MENU
 
+# Built in version of mv that can handle patterns
+autoload -U zmv
+
 # Source Private Zsh
 
 source "$HOME/Development/private-mac-preferences/square-zshrc"
