@@ -164,6 +164,7 @@ alias symbolicate="/Applications/Xcode.app/Contents/SharedFrameworks/DVTFoundati
 alias dorig='find . -iname \*.orig -delete'
 alias ddd="rm -rf $HOME/Library/Developer/Xcode/DerivedData"
 alias vs='open -a "Visual Studio Code" "$1"'
+alias sz='source ~/.zshrc'
 
 function fz() { $2 $($1 | fzf) }
 
