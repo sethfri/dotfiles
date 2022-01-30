@@ -44,12 +44,26 @@ alias gd='git diff'
 alias ga='git apply -3 -p3'
 alias gcmamd='git commit --amend'
 alias grl='git reflog'
+alias grb='git rebase'
+alias grba='git rebase --abort'
 alias grhh='git reset --hard HEAD~1'
 alias grh='git reset HEAD~1'
 alias grst='git restore'
 
 function gr() { git rebase -i --autosquash HEAD~$1; }
-function grb() { GIT_SEQUENCE_EDITOR=true git rebase -i --autosquash --autostash HEAD~$1; }
+function gra() { GIT_SEQUENCE_EDITOR=true git rebase -i --autosquash --autostash HEAD~$1; }
+
+function gro() {
+  NEW_BASE="$1"
+  BRANCH="$2"
+  NUM_COMMITS="$3"
+
+  if [ -z $NUM_COMMITS ]; then
+    NUM_COMMITS=1
+  fi
+
+  git rebase --onto "$NEW_BASE" "$BRANCH"~"$NUM_COMMITS" "$BRANCH"
+}
 
 function gcmaf() {
     local target="HEAD"
