@@ -122,6 +122,7 @@ function gitfile() {
 
 # Ruby
 alias be='bundle exec'
+alias mine='open -a RubyMine'
 
 # CocoaPods
 alias pu='bundle exec pod update --repo-update'
