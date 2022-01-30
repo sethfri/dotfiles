@@ -7,4 +7,8 @@ if ! which gh >/dev/null; then
   exit 1
 fi
 
-gh repo clone sethfri/private-mac-preferences ../private-mac-preferences
+if [ ! -d ../private-mac-preferences ]; then
+  gh repo clone sethfri/private-mac-preferences ../private-mac-preferences
+else
+  echo "Private preferences already downloaded"
+fi
