@@ -180,6 +180,9 @@ function prl() {
 setopt AUTO_CD
 # Make glob matching case insensitive
 setopt NO_CASE_GLOB
+# Add command autocorrection
+setopt CORRECT
+setopt CORRECT_ALL
 
 # Source Private Zsh
 
