@@ -195,6 +195,15 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
 
+source "$HOME/Development/mac-setup/config/zsh/colors.zsh"
+source "$HOME/Development/mac-setup/config/zsh/prompt.zsh"
+source "$HOME/Development/mac-setup/config/zsh/completion/completion.zsh"
+
+# Completion
+
+autoload -Uz compinit && compinit
+autoload -U bashcompinit && bashcompinit
+
 # Source Private Zsh
 
 source "$HOME/Development/private-mac-preferences/square-zshrc"
