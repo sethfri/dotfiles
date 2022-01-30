@@ -1,4 +1,21 @@
 
+# Path
+
+path=(
+  "$HOME/.rvm/gems/ruby-2.7.4/bin"
+  "/usr/local/bin"
+  "/usr/local/sbin"
+  "/opt/homebrew/bin"
+  "/opt/homebrew/sbin"
+  "$HOME/bin"
+  "/opt/local/bin"
+  "/opt/local/sbin"
+  "/usr/bin"
+  "/bin"
+  "/usr/sbin"
+  "/sbin"
+)
+
 # Git
 alias gmt='git mergetool'
 alias gm='git merge'
