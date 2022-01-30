@@ -49,6 +49,7 @@ alias grba='git rebase --abort'
 alias grhh='git reset --hard HEAD~1'
 alias grh='git reset HEAD~1'
 alias grst='git restore'
+alias gwtr='git worktree remove'
 
 function gr() { git rebase -i --autosquash HEAD~$1; }
 function gra() { GIT_SEQUENCE_EDITOR=true git rebase -i --autosquash --autostash HEAD~$1; }
@@ -63,6 +64,16 @@ function gro() {
   fi
 
   git rebase --onto "$NEW_BASE" "$BRANCH"~"$NUM_COMMITS" "$BRANCH"
+}
+
+function gwt() {
+  local parent="$2"
+
+  if [ -z $parent ]; then
+    parent="main"
+  fi
+
+  git worktree add -b "$1" ../"$1" "$parent"
 }
 
 function gcmaf() {
