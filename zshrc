@@ -126,7 +126,6 @@ alias mine='open -a RubyMine'
 
 # CocoaPods
 alias pu='bundle exec pod update --repo-update'
-alias pio='pik && xed .'
 alias nuke='rm -rf Pods/ && git clean -fff -dddd -x && dxdd && pod repo update && pik'
 
 # Do a pod install without killing Xcode
@@ -149,7 +148,11 @@ function pi() {
 function pik() {
   pkill Xcode
 
-  pi
+  pi "$@"
+}
+
+function pio() {
+  pik "$@" && xed .
 }
 
 # Backend
