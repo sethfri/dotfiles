@@ -161,7 +161,7 @@ alias gb='./gradlew build'
 
 # Helpers
 alias symbolicate="/Applications/Xcode.app/Contents/SharedFrameworks/DVTFoundation.framework/Versions/A/Resources/symbolicatecrash -v"
-alias dorig='find . -iname *.orig -delete'
+alias dorig='find . -iname \*.orig -delete'
 alias ddd="rm -rf $HOME/Library/Developer/Xcode/DerivedData"
 alias vs='open -a "Visual Studio Code" "$1"'
 
