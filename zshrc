@@ -189,6 +189,12 @@ setopt NO_AUTO_MENU
 # Built in version of mv that can handle patterns
 autoload -U zmv
 
+autoload -U history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^[[A" history-beginning-search-backward-end
+bindkey "^[[B" history-beginning-search-forward-end
+
 # Source Private Zsh
 
 source "$HOME/Development/private-mac-preferences/square-zshrc"
