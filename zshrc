@@ -17,8 +17,8 @@ path=(
 )
 
 # Projects
-alias ms="$HOME/Development/mac-setup"
-alias pmp="$HOME/Development/private-mac-preferences"
+alias ms="$HOME/Developer/mac-setup"
+alias pmp="$HOME/Developer/private-mac-preferences"
 
 # Git
 alias gmt='git mergetool'
@@ -195,10 +195,10 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
 
-source "$HOME/Development/mac-setup/config/zsh/colors.zsh"
-source "$HOME/Development/mac-setup/config/zsh/prompt.zsh"
-source "$HOME/Development/mac-setup/config/zsh/history.zsh"
-source "$HOME/Development/mac-setup/config/zsh/completion/completion.zsh"
+source "$HOME/Developer/mac-setup/config/zsh/colors.zsh"
+source "$HOME/Developer/mac-setup/config/zsh/prompt.zsh"
+source "$HOME/Developer/mac-setup/config/zsh/history.zsh"
+source "$HOME/Developer/mac-setup/config/zsh/completion/completion.zsh"
 
 # Completion
 
@@ -207,4 +207,4 @@ autoload -U bashcompinit && bashcompinit
 
 # Source Private Zsh
 
-source "$HOME/Development/private-mac-preferences/square-zshrc"
+source "$HOME/Developer/private-mac-preferences/square-zshrc"

@@ -1,6 +1,6 @@
 # prompt settings
 
-source $HOME/Development/mac-setup/config/zsh/git-prompt
+source $HOME/Developer/mac-setup/config/zsh/git-prompt
 
 setopt prompt_subst
 
